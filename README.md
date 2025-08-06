@@ -25,6 +25,15 @@ La persistance est assurée avec Hibernate et une base de données relationnelle
 - Hibernate
 
 ---
+### Structure projet
+
+<img width="620" height="464" alt="image" src="https://github.com/user-attachments/assets/6eb3a8d6-6d9f-4195-b76e-ff4899a94b9e" />
+
+<img width="597" height="464" alt="image" src="https://github.com/user-attachments/assets/89d5ab74-353b-4f08-94c4-83669a7f2195" />
+
+<img width="553" height="260" alt="image" src="https://github.com/user-attachments/assets/674371ed-aec5-43e9-b565-514c9b02c8c3" />
+
+
 
 ## Installation et Lancement
 
