@@ -30,7 +30,7 @@ public class ClasseWebServiceImpl implements ClasseWebService {
 
     @Override
     public ClasseDto save(ClasseDto classesDto) {
-        return classesService.save(classesDto) ? classesDto : null;
+        return classesService.save(classesDto);
     }
 
     @Override

@@ -29,9 +29,10 @@ public class ClasseService implements IClasseService {
     }
 
     @Override
-    public boolean save(ClasseDto classesDto) {
+    public ClasseDto save(ClasseDto classesDto) {
         ClasseEntity entity = ClasseMapper.toClassesEntity(classesDto);
-        return classesDao.save(entity);
+        ClasseEntity savedEntity = classesDao.save(entity);
+        return ClasseMapper.toClassesDto(savedEntity);
     }
 
     @Override

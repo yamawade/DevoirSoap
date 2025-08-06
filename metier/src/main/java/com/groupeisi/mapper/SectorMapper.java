@@ -36,9 +36,9 @@ public class SectorMapper {
         dto.setId(sector.getId());
         dto.setName(sector.getName());
         // Vous pouvez ajouter la conversion des classes si vous le souhaitez
-        if (sector.getClasses() != null) {
-            dto.setClasses(ClasseMapper.listClassesEntityToListClassesDto(sector.getClasses()));
-        }
+//        if (sector.getClasses() != null) {
+//            dto.setClasses(ClasseMapper.listClassesEntityToListClassesDto(sector.getClasses()));
+//        }
         return dto;
     }
 
@@ -54,9 +54,9 @@ public class SectorMapper {
         SectorEntity entity = new SectorEntity();
         entity.setId(sector.getId());
         entity.setName(sector.getName());
-        if (sector.getClasses() != null) {
-            entity.setClasses(ClasseMapper.listClassesDtoToListClassesEntity(sector.getClasses()));
-        }
+//        if (sector.getClasses() != null) {
+//            entity.setClasses(ClasseMapper.listClassesDtoToListClassesEntity(sector.getClasses()));
+//        }
         return entity;
     }
 }

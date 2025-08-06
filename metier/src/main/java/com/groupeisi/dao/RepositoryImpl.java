@@ -52,18 +52,20 @@ public class RepositoryImpl<T> implements Repository<T> {
 	}
 
 	@Override
-	public boolean save(T t) {
+	public T save(T t) {
 		Transaction tx = session.beginTransaction();
 		try {
-			session.persist(t);
+			T savedEntity = (T) session.merge(t); // merge crée ou met à jour selon l’état
 			tx.commit();
-			return true;
+			return savedEntity;
 		} catch (Exception e) {
 			tx.rollback();
 			e.printStackTrace();
+			return null;
 		}
-		return false;
 	}
+
+
 
 	@Override
 	public boolean update(T t) {

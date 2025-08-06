@@ -14,7 +14,7 @@ public class SectorDto implements Serializable {
     @XmlElement(name = "name", required = true)
     private String name;
 
-    private List<ClasseDto> classes;
+//    private List<ClasseDto> classes;
 
     public SectorDto() {
         super();
@@ -42,11 +42,11 @@ public class SectorDto implements Serializable {
         this.name = name;
     }
 
-    public List<ClasseDto> getClasses() {
-        return classes;
-    }
-
-    public void setClasses(List<ClasseDto> classes) {
-        this.classes = classes;
-    }
+//    public List<ClasseDto> getClasses() {
+//        return classes;
+//    }
+//
+//    public void setClasses(List<ClasseDto> classes) {
+//        this.classes = classes;
+//    }
 }

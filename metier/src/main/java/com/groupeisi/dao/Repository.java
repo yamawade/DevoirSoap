@@ -7,7 +7,8 @@ public interface Repository<T> {
 	public List<T> list(T t);
 	public T get(Long id);
 	public boolean delete(Long id);
-	public boolean save(T t);
+	T save(T t); // au lieu de boolean
+
 	public boolean update(T t);
 
 }

@@ -29,10 +29,12 @@ public class SectorService implements ISectorService {
     }
 
     @Override
-    public boolean save(SectorDto sectorsDto) {
+    public SectorDto save(SectorDto sectorsDto) {
         SectorEntity entity = SectorMapper.toSectorsEntity(sectorsDto);
-        return sectorsDao.save(entity);
+        SectorEntity savedEntity = sectorsDao.save(entity);
+        return SectorMapper.toSectorsDto(savedEntity);
     }
+
 
     @Override
     public boolean update(SectorDto sectorsDto) {

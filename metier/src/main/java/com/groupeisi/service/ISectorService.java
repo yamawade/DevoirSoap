@@ -7,6 +7,6 @@ public interface ISectorService {
     List<SectorDto> getAll();
     SectorDto get(Long id);
     boolean delete(Long id);
-    boolean save(SectorDto sectorsDto);
+    SectorDto save(SectorDto sectorsDto);
     boolean update(SectorDto sectorsDto);
 }
